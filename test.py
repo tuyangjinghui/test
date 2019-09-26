@@ -5,4 +5,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-r = requests.get('')
+r = requests.get('https://www.baidu.com')
+html = r.content.decode('utf-8')
+print(html)
